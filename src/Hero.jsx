@@ -7,13 +7,15 @@ import { useState } from "react";
 export default function Hero() {
     const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <section className="min-h-[90vh] lg:min-h-[130vh] w-full ">
+    <section className="min-h-[90vh] md:min-h-[130vh] w-full ">
 
       <img
         
         src={bg}
-        className="absolute h-[90vh] lg:min-h-[130vh] w-full lg:sepia-20 lg:opacity-46 "
+        // sepia-20 opacity-46 
+        className="absolute h-[90vh] md:min-h-[130vh]  w-full     "
       />
+<div className="absolute inset-0  h-[90vh] md:min-h-[130vh] bg-black/30"></div>
 
     
 
