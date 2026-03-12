@@ -12,7 +12,7 @@ export default function Hero() {
       <img
         
         src={bg}
-        className="absolute h-[90vh] lg:min-h-[130vh] w-full sepia-20 opacity-46 "
+        className="absolute h-[90vh] lg:min-h-[130vh] w-full lg:sepia-20 lg:opacity-46 "
       />
 
     
