@@ -2,7 +2,7 @@ import centerImg from "./assets/img3.jpeg";
 
 export default function TestimonialSection() {
   return (
-    <section className="bg-[#f3f3f3] py-24 px-6 lg:px-[7vw]">
+    <section className="bg-[#f3f3f3] py-10 px-6 lg:px-[7vw]">
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
 
@@ -61,7 +61,7 @@ export default function TestimonialSection() {
 
 
       {/* BUTTON */}
-      <div className="flex justify-center mt-16">
+      <div className="flex justify-center mt-16 mb-16">
         <button className="bg-gray-600 text-white px-8 py-3 rounded-md hover:bg-gray-700 transition">
           See More Projects
         </button>

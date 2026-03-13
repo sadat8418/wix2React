@@ -15,7 +15,7 @@ export default function Sec2() {
   ];
 
   return (
-    <section className="py-20 px-6 lg:px-[7vw] bg-white">
+    <section className="py-20 px-6 lg:px-[5vw] bg-white">
       <div className="mb-16 max-w-[1100px]">
         <h4 className="  text-4xl md:text-5xl mb-6 text-black ">
           <span className="text-5xl md:text-6xl font-alex mr-4 ">Our Craft</span>
@@ -42,7 +42,7 @@ export default function Sec2() {
               onMouseEnter={() => setActive(index)}
               onMouseLeave={() => setActive(null)}
               className={`relative overflow-hidden cursor-pointer rounded-xl transition-transform duration-500
-              ${isActive ? "scale-110 z-10" : "scale-100"}`}
+              ${isActive ? "scale-105 z-10" : "scale-100"}`}
             >
 
               {/* Image */}
@@ -56,7 +56,7 @@ export default function Sec2() {
 
                 <h2
                   className={`text-white font-bold transition-all duration-500
-                  ${isActive ? "text-4xl scale-125" : "text-3xl"}`}
+                  ${isActive ? "text-4xl scale-107" : "text-3xl"}`}
                 >
                   {item.title}
                 </h2>

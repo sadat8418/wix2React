@@ -15,7 +15,7 @@ export default function ProcessSection() {
           come together.
         </p>
 
-        <button className="bg-gray-400 text-white px-6 py-3 rounded-md hover:bg-gray-500">
+        <button className="bg-gray-600 text-white px-6 py-3 rounded-md hover:bg-gray-700 mt-16 mb-16 md:mt-0 md:mb-0 transition ">
           Explore Our Process
         </button>
       </div>
@@ -23,7 +23,7 @@ export default function ProcessSection() {
       <div className="overflow-hidden rounded-xl">
         <img
           src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f"
-          className="w-full h-full object-cover"
+          className="w-full h-[350px] md:h-full object-cover"
         />
       </div>
 

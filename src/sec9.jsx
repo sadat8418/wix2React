@@ -3,15 +3,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 export default function Footer() {
   return (
-<section className="grid grid-cols-1 md:grid-cols-4 items-center px-10 md:px-16 py-24 bg-white">      {/* grid grid-cols-1 md:grid-cols-2 gap-12 items-center px-10 md:px-16 py-16 bg-[#3e3f27] 
+<section className="grid grid-cols-1 md:grid-cols-4 items-center  md:px-16 py-24 bg-white">      {/* grid grid-cols-1 md:grid-cols-2 gap-12 items-center px-10 md:px-16 py-16 bg-[#3e3f27] 
       bg-[#3e3f27] text-white py-24 px-12 flex justify-between items-center
       */}
-      <div>
+      <div className="flex justify-start md:justify-Start ">
         
         <img src={logo} alt="" />
       </div>
-      <div className="max-w-3xl">
-        <h4 className=" text-xl mt-4 text-black">
+      <div className="max-w-3xl px-10">
+        <h4 className=" text-xl mt-4 text-black ">
           
            Quick Links
            </h4>
@@ -30,7 +30,7 @@ About           </h4>
         <h4 className="font-thin text-xl leading-tight text-black">
 Contact           </h4>
       </div>
-      <div className="max-w-3xl">
+      <div className="max-w-3xl px-10">
         <h4 className=" text-xl mt-4 text-black">
           
            Quick Links
@@ -51,8 +51,8 @@ About           </h4>
 Contact           </h4>
       </div>
 
-       <div className="max-w-3xl">
-        <h4 className="font-arial text-3xl font-thin mb-4 text-black font-weight-100">Design inspiration,</h4>
+       <div className="max-w-3xl px-10">
+        <h4 className="font-arial text-3xl font-thin mb-4 mt-4 text-black font-weight-100">Design inspiration,</h4>
         <h4 className="font-alex text-4xl text-black">Delivered</h4>
         <p className=" mt-2 text-sm text-black">
           Thoughtful project highlights and  custom design ideas, sent occasionally. </p>
