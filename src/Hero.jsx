@@ -5,6 +5,27 @@ import { useState } from "react";
 
 
 export default function Hero() {
+  function slowScrollTo(elementId, duration = 2000) {
+  const target = document.getElementById(elementId);
+  const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+  const startPosition = window.pageYOffset;
+  const distance = targetPosition - startPosition;
+  let startTime = null;
+
+  function animation(currentTime) {
+    if (!startTime) startTime = currentTime;
+    const timeElapsed = currentTime - startTime;
+    const progress = Math.min(timeElapsed / duration, 1);
+
+    window.scrollTo(0, startPosition + distance * progress);
+
+    if (timeElapsed < duration) {
+      requestAnimationFrame(animation);
+    }
+  }
+
+  requestAnimationFrame(animation);
+}
     const [menuOpen, setMenuOpen] = useState(false);
   return (
     <section className="min-h-[90vh] md:min-h-[130vh] w-full ">
@@ -14,6 +35,7 @@ export default function Hero() {
         src={bg}
         // sepia-20 opacity-46 
         className="absolute h-[90vh] md:min-h-[130vh]  w-full     "
+        
       />
 <div className="absolute inset-0  h-[90vh] md:min-h-[130vh] bg-black/30"></div>
 
@@ -49,22 +71,25 @@ export default function Hero() {
 
       {/* LEFT MENU (Desktop) */}
       <div className="hidden lg:flex gap-10 text-xl">
-        <a className="hover:text-white transition">Our Services</a>
-        <a className="hover:text-white transition">Design</a>
+        <a className="hover:text-white transition" href='#our-services'>Our Services</a>
+        <a className="hover:text-white transition" href='#design'>Design</a>
       </div>
 
       {/* LOGO */}
       <div>
         <img
           src={logo}
-          className="sepia-80 invert-70 hover:invert-100 w-28 lg:w-auto"
+          className="sepia-80 invert-70 hover:invert-100 w-28 lg:w-auto cursor-pointer"
+          
+      onClick={() => slowScrollTo("gallary", 10000)}
+    
         />
       </div>
 
       {/* RIGHT MENU (Desktop) */}
       <div className="hidden lg:flex items-center gap-8 text-lg">
-        <a className=" hover:text-white transition ">Our Work</a>
-        <a className="hover:text-white transition">About</a>
+        <a className=" hover:text-white transition " href='#our-work'>Our Work</a>
+        <a className="hover:text-white transition" href='#about'>About</a>
 
         <button className="border border-[#e6d3a3] px-10 py-3 hover:bg-[#e6d3a3] hover:text-black transition rounded">
           Contact

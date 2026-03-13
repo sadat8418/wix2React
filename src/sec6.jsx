@@ -1,6 +1,6 @@
 export default function ProcessSection() {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center px-10 md:px-16 py-16 bg-[#E6E6E6]">
+    <section  id="about" className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center px-10 md:px-16 py-16 bg-[#E6E6E6]">
       
       <div className="md:px-16">
         <h4 className=" text-5xl font-light mb-6 text-black  text-4xl md:text-5xl">

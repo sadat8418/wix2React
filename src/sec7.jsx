@@ -30,7 +30,7 @@ export default function AutoGallery() {
   }, [paused]);
 
   return (
-    <div className="w-screen  mx-auto overflow-hidden bg-white py-10">
+    <div id="gallary" className=" w-screen  mx-auto overflow-hidden bg-white py-10">
       <div
         ref={scrollRef}
         onMouseEnter={() => setPaused(true)}

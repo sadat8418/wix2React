@@ -15,7 +15,7 @@ export default function Sec2() {
   ];
 
   return (
-    <section className="py-20 px-6 lg:px-[5vw] bg-white">
+    <section id="our-services" className="py-20 px-6 lg:px-[5vw] bg-white">
       <div className="mb-16 max-w-[1100px]">
         <h4 className="  text-4xl md:text-5xl mb-6 text-black ">
           <span className="text-5xl md:text-6xl font-alex mr-4 ">Our Craft</span>

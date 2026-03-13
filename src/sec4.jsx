@@ -3,7 +3,7 @@ import img2 from "./assets/img2.jpeg";
 
 export default function WorkSection() {
   return (
-    <section className="bg-[#f3f3f3] py-10 px-6 lg:px-[7vw]">
+    <section id="our-work" className="bg-[#f3f3f3] py-10 px-6 lg:px-[7vw]">
 
       {/* TITLE */}
       <div className="mb-16 max-w-[1100px]">

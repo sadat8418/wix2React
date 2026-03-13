@@ -3,7 +3,7 @@ export default function Parallax() {
   return (
     <>
       {/* TEXT SECTION */}
-      <section className="bg-[#E6E6E6] py-28 px-6 text-center flex  items-center justify-center ">
+      <section id="design" className="bg-[#E6E6E6] py-28 px-6 text-center flex  items-center justify-center ">
 
         <div className="max-w-[900px] ">
 
